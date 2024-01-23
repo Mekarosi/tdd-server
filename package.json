@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js"
+    "test": "NODE_ENV=test npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.23.8",
     "@babel/register": "^7.23.7",
     "chai": "^5.0.0",
+    "chai-exclude": "^2.1.0",
     "mocha": "^10.2.0",
     "regenerator-runtime": "^0.14.1",
     "supertest": "^6.3.4"
